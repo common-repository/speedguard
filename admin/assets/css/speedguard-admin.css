@@ -1,0 +1,377 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/**General**/
+#adminmenu #toplevel_page_speedguard div.wp-menu-image {
+    background-size: 18px auto;
+}
+
+#tests-list-meta-box .speedguard-waiting, .toplevel_page_speedguard_tests_cwv_widget tbody td .speedguard-waiting { /* Waiting spinner */
+    background-image: url(../images/loading.gif);
+    height: 18px;
+    width: 18px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.wp-list-table.toplevel_page_speedguard_tests thead th {
+    text-align: center;
+}
+
+#tests-list-meta-box td.column-guarded_page_title {
+    min-width: 100px;
+    max-width: 200px;
+    font-size: 0.9em;
+}
+
+
+
+
+#tests-list-meta-box .column-report_date {
+    min-width: 90px;
+    vertical-align: middle;
+}
+
+#tests-list-meta-box tbody .column-report_date {
+    font-size: 0.8em;
+}
+
+#tests-list-meta-box .manage-column {
+    font-size: 0.8em;
+}
+
+#tests-list-meta-box p.search-box {
+    display: none;
+}
+
+
+.report-link::after {
+    display: inline-block;
+    content: '';
+    width: 0.8em; /* Adjust size as needed */
+    height: 0.8em; /* Adjust size as needed */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"%3E%3Cpath d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" fill="%232271b1"%3E%3C/path%3E%3C/svg%3E');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0.3em; /* Adjust spacing as needed */
+}
+
+
+
+/** Results Page**/
+
+#tests-list-meta-box table td:not(.column-guarded_page_title) {
+    white-space: nowrap;
+}
+/** Distinguish visually mobile results from Desktop. There is probably a better way to do this **/
+td.cwv_desktop_lcp,  th.column-cwv_desktop_lcp, th.desktop { border-left: 1px solid grey;}
+
+
+#speedguard_dashboard_widget thead th, #speedguard-dashboard-widget thead th {
+    text-align: center;
+}
+
+.toplevel_page_speedguard_tests th.test-type-thead {
+}
+
+.toplevel_page_speedguard_tests .page-title-action {
+    display: none;
+}
+
+.toplevel_page_speedguard_tests #speedguard_add_url {
+    width: 100%;
+}
+
+.toplevel_page_speedguard_tests #speedguard_new_url {
+    width: 80%;
+}
+
+.toplevel_page_speedguard_tests .awesomplete {
+    width: 80% !important;
+    margin-right: 1em;
+}
+
+.toplevel_page_speedguard_tests .awesomplete #speedguard_new_url {
+    width: 100%;
+}
+
+.toplevel_page_speedguard_tests .speedguard-results .button {
+    display: none;
+}
+
+
+.sg-device-column::before {
+    font: normal 22px/1 dashicons;
+    position: relative;
+    width: 100%;
+    padding: 4px 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: none !important;
+    margin-right: 6px;
+}
+
+.sg-device-column.desktop::before {
+    content: "\f547";
+}
+
+.sg-device-column.mobile::before {
+    content: "\f470";
+}
+
+#speed-score-legend-meta-box table td {
+    padding: 1.2em 0.5em;
+    min-width: 80px;
+    border: 0;
+}
+
+#speed-score-legend-meta-box .speedguard-score {
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+#speedguard-legend-meta-box li{
+    margin-bottom: 2em;
+}
+#speedguard-legend-meta-box li#undersanding-metrics img{
+    margin-top: 2em;
+}
+
+#speedguard-legend-meta-box li#understand-results ul {
+    list-style: disc;
+    margin-left: 4em;
+}
+
+
+
+#speedguard-howto-meta-box .youtube-responsive-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+}
+
+#speedguard-howto-meta-box .youtube-responsive-container iframe,
+#speedguard-howto-meta-box .youtube-responsive-container object,
+#speedguard-howto-meta-box .youtube-responsive-container embed,
+#speedguard-howto-meta-box .youtube-responsive-container video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.toplevel_page_speedguard_tests #tests-list-meta-box #location, .toplevel_page_speedguard_tests #tests-list-meta-box .column-location {
+    display: none;
+}
+
+.toplevel_page_speedguard_tests #tests-list-meta-box #connection, .toplevel_page_speedguard_tests #tests-list-meta-box .column-connection {
+    display: none;
+}
+
+/** Settings Page**/
+#api-meta-box table {
+    display: inline-block;
+    max-width: 500px;
+}
+
+#api-meta-box table td, #settings-meta-box table td {
+    border: 0;
+}
+
+#api-meta-box #submit {
+    margin-top: 1.6em;
+}
+
+#api-meta-box #api-instructions {
+    margin-left: 220px;
+}
+
+#settings-meta-box #submit {
+    margin: 1em 0 3em 320px;
+}
+
+#settings-meta-box .form-table th {
+    width: 300px;
+}
+
+#settings-meta-box #speedguard_options[check_recurrence], #settings-meta-box #speedguard_options[critical_load_time] {
+    max-width: 30px;
+    text-align: center;
+}
+
+#settings-meta-box input[type="text"].numbers {
+    max-width: 40px;
+    text-align: center;
+}
+
+#settings-meta-box #speedguard_options[type="email_me_at"] {
+    max-width: 70px;
+}
+
+#settings-meta-box td label {
+    line-height: 2.8;
+}
+
+#settings-meta-box .note {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#settings-meta-box .inside h2 {
+    margin-top: 3em;
+    padding-left: 0;
+    font-size: large;
+    font-weight: bold;
+}
+
+/** Widgets**/
+.toplevel_page_speedguard_tests #poststuff h2, .toplevel_page_speedguard_settings #poststuff h2  {text-transform: none;}
+
+
+.toplevel_page_speedguard_tests_cwv_widget tbody td {
+    text-align: center;
+}
+
+.no-guarded-pages #speedguard-tips-meta-box {
+    display: none;
+}
+
+.no-guarded-pages #speedguard-speedresults-meta-box {
+    display: none;
+}
+
+.no-guarded-pages #speedguard_dashboard_widget {
+    display: none;
+}
+
+.no-guarded-pages #speedguard-site-speed-score {
+    display: none;
+}
+
+
+#speedguard-tips-meta-box {
+    width: 280px;
+}
+
+#speedguard-tips-meta-box ul {
+    list-style: circle;
+    margin-left: 2em;
+}
+
+.speedguard-results {
+    width: 100%;
+    margin: 2.6em 0;
+    text-align: center;
+}
+
+.speedguard-results .result-column {
+    width: 30%;
+    display: inline-block;
+}
+
+.speedguard-results .result-column .result-numbers {
+    margin: 0;
+    font-size: 1.6em;
+}
+
+.speedguard-results .result-column .average {
+    font-weight: bold;
+    font-size: 2.2em;
+}
+
+.speedguard-results .button {
+    margin-top: 2em;
+}
+
+.ab-top-menu .green a {
+    color: #a9f38a !important;
+}
+
+.ab-top-menu .yellow a {
+    color: #f3dc8a !important;
+}
+
+.ab-top-menu .red a {
+    color: #f35252 !important;
+}
+
+
+.speedguard-score {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+
+.speedguard-score.score-green, .speedguard-score.score-green span {
+    color: #33a849;
+
+}
+
+.speedguard-score.score-yellow, .speedguard-score.score-yellow span {
+    color: #f9d30d;
+
+}
+
+.speedguard-score.score-red, .speedguard-score.score-red span {
+    color: #e6493a;
+}
+
+
+#speedguard-important-questions-meta-box ul li {
+   }
+
+#speedguard-important-questions-meta-box ul li::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 14'%3E%3Cpath d='M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z' fill='%23aa0000'/%3E%3C/svg%3E");
+
+}
+
+
+/* Notifications Preview Block */
+figure.notifications-example {
+   margin-bottom: 2em;
+    max-width: 600px;
+}
+.notifications-example figcaption {
+    font-size: 0.8em;
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+/* Horizontal scroll for the Tests table */
+.speedguard-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on mobile devices */
+}
+
+.speedguard-table-wrapper .wp-list-table {
+    width: 100%;
+    min-width: 1000px; /* Set a minimum width to trigger the scroll */
+}
+
+
+/* SZ picture in Sidebar widget and Freemius Opt0in screen */
+#speedguard-about-meta-box #szpic, .fs-content #szpic {
+    background-image: url(../images/sabrina.jpg); /* Replace with your image path */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    height: 75px; /* Adjust as per your image's dimensions */
+    width: 75px; /* Adjust as per your image's dimensions */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image stays within the circular boundary */
+    float: right; /* Adjust positioning as needed */
+    margin: 1em; /* Adjust margin as needed */
+}
+
+#speedguard-about-meta-box .rate-link {
+    text-decoration: none;
+}
+
+/**Notices**/
